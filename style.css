@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, sans-serif;
+}
+
+body {
+    background-color: #121212; /* Slight Black */
+    color: #ffffff;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #1a1a1a;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo { font-size: 1.5rem; font-weight: bold; letter-spacing: 2px; }
+.logo span { color: #007bff; }
+.nav-links { display: flex; list-style: none; }
+.nav-links li { margin-left: 30px; }
+.nav-links a { color: #bbb; text-decoration: none; transition: 0.3s; }
+.nav-links a:hover { color: #fff; }
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h1 { font-size: 4rem; margin-bottom: 10px; }
+.hero span { color: #007bff; }
+.hero p { color: #888; font-size: 1.2rem; margin-bottom: 30px; }
+
+.cta-button {
+    padding: 12px 30px;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.cta-button:hover { background: #0056b3; }
+
+/* Projects Grid */
+.projects-section { padding: 80px 8%; }
+.projects-section h2 { margin-bottom: 40px; text-align: center; }
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-box {
+    height: 250px;
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.project-box.empty { border: 2px dashed #444; color: #666; }
+
+.images img
+{
+   border-radius: 5px;
+}
+
+.project-box:hover {
+    transform: translateY(-5px);
+    border-color: #007bff;
+}
+
+/* Footer */
+footer {
+    background-color: #0a0a0a;
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.social-links {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.1rem;
+}
+
+footer p { color: #555; margin-top: 20px; }
